@@ -1,0 +1,51 @@
+{% extends 'biditem/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+<section id="showcase-inner" class="showcase-search text-white py-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <form action="{% url 'biditem:biditem_searchresult' %}">
+          <!-- Form Row 1 -->
+          <div class="form-row">
+            <div class="col-md-3 mb-3">
+              <label class="sr-only">Payitem</label>
+              <input type="text" name="payitem" class="form-control" placeholder="PAY ITEM NUMBER">
+            </div>
+
+            <div class="col-md-5 mb-3">
+              <label class="sr-only">PayitemDes</label>
+              <input type="text" name="payitemdesc" class="form-control" placeholder="PAY ITEM DESCRIPTION">
+            </div>
+
+            <div class="col-md-2 mb-3">
+              <label class="sr-only">County</label>
+              <select name="county" class="form-control">
+                <option selected="true" disabled="disabled">County (All)</option>
+                {% for key,value in county_choices.items %}
+                <option value="{{value}}"
+                {% if key == values.county %} selected {% endif %}>{{value}}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="col-md-2 mb-3">
+              <label class="sr-only">District</label>
+              <select name="district" class="form-control">
+                <option selected="true" disabled="disabled">District (Any)</option>
+                {% for key,value in district_choices.items %}
+                  <option value="{{key}}"
+                  {% if key == values.district %} selected {% endif %}>{{value}}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+          <button class="btn btn-secondary search btn-block mt-4" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+{% endblock %}
