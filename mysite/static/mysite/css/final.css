@@ -1,5 +1,6 @@
 body{
-  font-family:Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+   font-family:Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+
   background: #f1fffa;
 }
 .icon-top{
@@ -43,6 +44,22 @@ body{
   color:#e01818;
   /* border: 3px solid #2a9134; */
   font-size: 25px;
+  font-weight:400px;
+  font-family: 'Kalam', cursive!important;
+}
+
+.topc{
+  /* color:#f1fffa; */
+  color:#FADF2C;
+  /* color:#0069d9; */
+  /* border: 3px solid #2a9134; */
+  font-size: 25px;
+  font-weight:400px;
+  font-family: 'Kalam', cursive!important;
+}
+.topc1{
+  color:#FADF2C;
+  font-size: 40px;
   font-weight:400px;
   font-family: 'Kalam', cursive!important;
 }
@@ -163,6 +180,7 @@ color:   #f1fffa;
   display: block;
    padding: 0 0 24px;
   text-align: center!important;
+
   /* font-weight: 600; */
   /* color: #007791; */
   /* font-size: 15px !important; */
@@ -215,10 +233,15 @@ h1{
 
 
 .page-footer{
-  background-color: #343a40;
+  margin-top: 10px;
+   background-color: #343a40;
+  /* background-color: #808084; */
+  /* background-color: #7F7F7F; */
 }
 h6{
-  color: #fff;
+  color: #f1fffa;
+  font-size: 16px;
+  /* color: #fff; */
 }
 .p{
   color: #fff;
@@ -232,6 +255,20 @@ h6{
 }
 .teal{
   background-color:  #343a40;
+}
+.fweb{
+  color:#e01818;
+  font-size: 16px;
+  font-family: 'Kalam', cursive!important;
+}
+
+.fweb1{
+  color:#0069d9;
+
+}
+.p1{
+  color:#e01818;
+  font-family: 'Kalam', cursive!important;
 }
 
 
@@ -294,3 +331,6 @@ h6{
     height: 35vw;
     object-fit: cover;
 } */
+h5{
+  font-size: 14px;
+}
