@@ -27,4 +27,5 @@ urlpatterns = [
     path('pmrect/', include("pmrectangle.urls", namespace="pmrectagnle")),
     path('bridgeinfo/', include("bridgeinfo.urls", namespace="bridgeinfo")),
     path('articles', TemplateView.as_view(template_name='articles.html'), name='articles'),
+    path('biditem/', include("biditem.urls", namespace="biditem_search")),
 ]
