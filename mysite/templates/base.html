@@ -33,16 +33,17 @@
            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
              <a class="dropdown-item" href="{% url 'elastobrg:elastoIL' %}">Bearing Design</a>
              <a class="dropdown-item" href="#" data-target="#pmmodal" data-toggle="modal">Pm Curve</a>
-             <a class="dropdown-item" href="#">Bridge Info</a>
+             <a class="dropdown-item" href="{% url 'bridgeinfo:tollway' %}">Bridge Info</a>
+             <a class="dropdown-item" href="{% url 'biditem:biditem_search' %}">Bid Item Report</a>
            </div>
          </li>
          <li class="nav-item dropdown mt-2">
           <a class="nav-link dropdown-toggle text-capitalize" href="#applications" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Calculators</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Section Properties</a>
-            <a class="dropdown-item" href="#">Distribution Factors</a>
-            <a class="dropdown-item" href="#">Lap Length</a>
+            <a class="dropdown-item" href="#">Section Properties..coming soon</a>
+            <a class="dropdown-item" href="#">Distribution Factors..coming soon</a>
+            <a class="dropdown-item" href="#">Lap Length..coming soon</a>
           </div>
         </li>
           <li class="nav-item"><a href="{% url 'articles' %}" class="nav-link m-2 text-capitalize">Articles</a></li>
@@ -85,14 +86,14 @@
       <div class="row text-center text-md-left mt-3 pb-3">
         <!-- Grid column -->
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Design Calc</h6>
+          <h6 class="text-uppercase mb-4 font-weight-bold p1">Design Calc</h6>
           <p class="p">Rapid design solutions for engineers. Save time and design effort, keep the design in your profile for future use.</p>
         </div>
         <!-- Grid column -->
         <hr class="w-100 clearfix d-md-none">
         <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Applications</h6>
+          <h6 class="text-uppercase mb-4 font-weight-bold p1">Applications</h6>
           <p class="p">
             <a  class="p"href="#!">Bearing</a>
           </p>
@@ -107,26 +108,27 @@
         <hr class="w-100 clearfix d-md-none">
         <!-- Grid column -->
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+          <h6 class="text-uppercase mb-4 font-weight-bold p1">Useful links</h6>
           <p class="p">
             <a class="p" href="#!">Your Account</a>
           </p>
           <p class="p">
             <a class="p" href="#!">Contact Us</a>
           </p>
-          <p class="p">
-            <a class="p" href="#!">Subscribe</a>
-          </p>
+           <p class="p">
+             <a class="p" href="#!">Subscribe</a>
+               </p>
+
         </div>
         <!-- Grid column -->
         <hr class="w-100 clearfix d-md-none">
         <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <h6 class="text-uppercase mb-4 font-weight-bold p1">Contact</h6>
           <p class="p">
             <i class="fa fa-home mr-3"></i> Chicago, IL, USA</p>
           <p class="p">
-            <i class="fa fa-envelope mr-3"></i> info@gmail.com</p>
+            <i class="fa fa-envelope mr-3"></i> designcalc@gmail.com</p>
           <!-- <p class="p">
             <i class="fa fa-phone mr-3"></i> + 01 312 623 5291</p>
           <p class="p">
@@ -141,9 +143,9 @@
         <!-- Grid column -->
         <div class="col-md-7 col-lg-8">
           <!--Copyright-->
-          <p class="text-center text-md-left">© 2018 Copyright:
-            <a href="#">
-              <strong> design Cal.com</strong>
+          <p class="text-center text-md-left fweb1">© 2019 Copyright:
+            <a href="#" class="fweb">
+              <strong> designCal.com</strong>
             </a>
           </p>
         </div>
